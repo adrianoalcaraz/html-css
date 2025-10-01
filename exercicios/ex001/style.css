@@ -36,12 +36,12 @@ header h1 {
     font-weight: normal;
 }
 header > nav {
-    margin: 10px 10px 0px 10px;
-    padding: 5px;
+    margin: 0px 0px 0px 0px;
+    padding: 3px;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
 }
 nav > a {
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
     color: var(--cor5);
     text-decoration: none;
@@ -174,4 +174,17 @@ footer a:hover {
 }
 footer a::after {
     content: '\00A0\1F517';
+}
+strong {
+    background-color: var(--cor5);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-family: var(--fonte-cortada);
+    font-weight: normal;
+}
+strong:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    transition-duration: .5s;
 }
