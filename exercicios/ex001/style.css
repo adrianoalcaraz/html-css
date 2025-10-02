@@ -186,3 +186,6 @@ strong:hover {
     color: var(--cor5);
     transition-duration: .5s;
 }
+abbr::after {
+    content: '\00A0\2714' ;
+}
