@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor1: #41161e ;
+    --cor2: #8C2641 ;
+    --cor3: #D9B4BE ;
+    --cor4: #F2CED8 ;
+    --cor5: #ff0051 ;
+
+    --font-padrao: Arial ;
+    --font-01: 'Lexend Giga' ;
+    --font-02: 'Handlee' ;
+}
+header {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor5));
+    padding: 10px;
+}
+header h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-01);
+    font-size: 8vw;
+}
+header > p {
+    text-align: center;
+    font-family: var(--font-02);
+    font-weight: normal;
+    font-style: italic;
+    color: black;
+    text-shadow: 3px 3px 3px rgba(219, 219, 219, 0.089);
+    padding:  0px 0px 8px 0px;
+    font-weight: 4vw;
+}
+header > p > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: var(--font-02);
+}
+header > p > a:hover {
+    text-decoration: underline;
+}
+nav > a {
+    padding: 9px;
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-01);
+}
+nav a:hover {
+    background-color: var(--cor5);
+    color: black;
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.185);
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+section {
+    padding-top: 10hv;
+    padding-bottom: 10hv;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.principal {
+    background-color: rgba(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.562);
+    background-attachment: fixed;
+}
+section.principal > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.397);
+    text-shadow: 1px 1px 0px black;
+    }
+section > p {
+    padding-bottom: 2em;
+    font-family: var(--font-02);
+    font-weight: bold;
+    font-style: italic;
+}
+section#img01 {
+    background-image: url(imagens/pexels-paisagem01.jpg);
+    background-position: right center;
+    padding: 30px;
+    background-size: cover;
+    
+}
+section#img02 {
+    background-image: url(imagens/pexels-paisagem02.jpg);
+    padding: 30px;
+    background-size: cover;
+   }
+footer {
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+}
+footer p {
+    color: white;
+    font-family: var(--font-01);
+    font-size: .8em;
+    text-align: center;
+}
+footer a {
+    color: var(--cor5);
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.178);
+    text-decoration: none;
+}
+footer a:hover {
+    background-color: white;
+    padding: 5px;
+    transition-duration: .7s;
+    border-radius: 10px;
+}
+footer a::after {
+    content: '\00A0\1F517';
+}
