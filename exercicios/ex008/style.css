@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lexend+Giga:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+:root {
+ --font01: 'Architects Daughter' ;
+ --font02: 'Lexend Giga' ;
+ --font03: 'Trade Winds' ;
+
+ --cor01: #01403A;
+ --cor02: #04BFAD;
+ --cor03: #038C7F;
+ --cor04: #027368;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: white;
+}
+header {
+background-color: #333;
+color: #fff;
+padding: 30px 20px 0px 20px;
+text-align: center;
+font-family: var(--font03);
+background-image: linear-gradient(to right, var(--cor01), var(--cor02));
+}
+header h1 {
+    font-weight: normal;
+    font-style: italic;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.281);
+    font-size: 2em;
+}
+nav {
+overflow: hidden;
+padding: 10px;
+font-family: Arial, Helvetica, sans-serif;
+}
+nav a {
+float: left;
+display: block;
+color: #fff;
+text-align: left;
+padding: 10px 10px 10px 10px;
+text-decoration: none;
+border-radius: 15px;
+font-family: var(--font02);
+font-size: .9em;
+  }
+nav a:hover {
+background-color: #ddd;
+color: black;
+transition-duration: .8s;
+}
+.container {
+padding: 20px;
+}
+.produtos {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+}
+.produto {
+background-color: #fff;
+padding: 15px;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+text-align: center;
+}
+.produto img {
+max-width: 100%;
+height: auto;
+}
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
