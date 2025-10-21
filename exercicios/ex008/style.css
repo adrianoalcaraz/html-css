@@ -21,7 +21,7 @@
 body {
 font-family: Arial, sans-serif;
 margin: 0;
-padding: 0;
+padding-bottom: 40px;
 background-color: white;
 }
 header {
@@ -59,6 +59,20 @@ background-color: #ddd;
 color: black;
 transition-duration: .8s;
 }
+h2 {
+  font-family: var(--font01);
+  background-image: linear-gradient(to right, var(--cor02), white);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+h3.alc {
+  font-family: var(--font01);
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding: 20px;
+}
 .container {
 padding: 20px;
 }
@@ -77,6 +91,21 @@ text-align: center;
 .produto img {
 max-width: 100%;
 height: auto;
+}
+p.print{
+  font-family: var(--font02);
+  text-align: center;
+  font-size: .8em;
+  }
+p > a {
+  color: #038C7F;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+  content: '\1F517';
+}
+a:hover {
+  background-color: #01403A;
+  color: white;
+  border-radius: 5px ;
 }
 footer {
 background-color: #333;
