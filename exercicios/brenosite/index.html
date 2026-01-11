@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professor de Violão | Aulas Profissionais</title>
+  <style>
+    :root {
+      --primary: #1e1e1e;
+      --secondary: #c59d5f;
+      --light: #f5f5f5;
+      --dark: #111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') center/cover no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      margin: 20px 0;
+      max-width: 800px;
+    }
+
+    header a {
+      padding: 15px 40px;
+      background: var(--secondary);
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: #a9824b;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--dark);
+      padding: 15px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 100px 80px;
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+      text-align: center;
+      color: var(--dark);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: var(--secondary);
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .videos iframe {
+      width: 100%;
+      height: 280px;
+      border-radius: 10px;
+    }
+
+    .contact {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 15px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact button {
+      padding: 15px;
+      background: var(--secondary);
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 1000px) {
+      .about, .courses, .videos {
+        grid-template-columns: 1fr;
+      }
+      header h1 { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2 style="color:white">Violão Pro</h2>
+  <ul>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#aulas">Aulas</a></li>
+    <li><a href="#videos">Vídeos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Professor de Violão</h1>
+  <p>Aulas profissionais de violão para todos os níveis. Aprenda teoria, prática, técnica e musicalidade com quem vive a música.</p>
+  <a href="#contato">Agendar Aula</a>
+</header>
+
+<section id="sobre">
+  <h2 class="section-title">Sobre o Professor</h2>
+  <div class="about">
+    <p>Sou professor de violão com mais de 10 anos de experiência, especializado em violão popular, clássico e acompanhamento. Meu método é focado em resultados, musicalidade e prazer em tocar.</p>
+    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" alt="Professor de Violão">
+  </div>
+</section>
+
+<section id="aulas">
+  <h2 class="section-title">Aulas Oferecidas</h2>
+  <div class="courses">
+    <div class="card"><h3>Violão Iniciante</h3><p>Postura, acordes básicos, ritmos e primeiras músicas.</p></div>
+    <div class="card"><h3>Violão Intermediário</h3><p>Campo harmônico, dedilhados, pestanas e técnica.</p></div>
+    <div class="card"><h3>Violão Avançado</h3><p>Improvisação, arranjos, teoria avançada e repertório.</p></div>
+  </div>
+</section>
+
+<section id="videos">
+  <h2 class="section-title">Vídeos de Aulas</h2>
+  <div class="videos">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="contato">
+  <h2 class="section-title">Contato</h2>
+  <div class="contact">
+    <form onsubmit="enviarMensagem(event)">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea rows="5" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Professor de Violão | Todos os direitos reservados</p>
+</footer>
+
+<script>
+  function enviarMensagem(e) {
+    e.preventDefault();
+    alert('Mensagem enviada com sucesso!');
+  }
+</script>
+
+</body>
+</html>
